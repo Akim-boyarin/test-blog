@@ -1,0 +1,17 @@
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin pagination-button-style($background-color, $border-color) {
+  width: 44px;
+  height: 44px;
+  @include flex(row, center, center);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+}
